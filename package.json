@@ -3,7 +3,9 @@
   "author": "jden <jason@denizac.org>",
   "version": "0.1.0",
   "description": "data plumbing toolkit",
-  "keywords": ["csv"],
+  "keywords": [
+    "csv"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -14,5 +16,10 @@
   "devDependencies": {
     "chai": "^1.9.1",
     "mocha": "^1.19.0"
+  },
+  "dependencies": {
+    "csv-write-stream": "^0.2.0",
+    "through0": "^0.1.1",
+    "binary-csv": "^0.2.0"
   }
 }
