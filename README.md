@@ -9,7 +9,7 @@ var tuttle = require('tuttle')
 var fs = require('fs')
 
 fs.createReadStream('./in.csv')
-  .pipe(tuttle.read({json: true}))
+  .pipe(tuttle.read())
   .pipe(tuttle.through(function (row) {
     console.log(row)
     return row
@@ -18,6 +18,16 @@ fs.createReadStream('./in.csv')
   .pipe(fs.createWriteStream('./out.csv'))
 
 ```
+
+## api
+
+using [jsig](https://github.com/jden/jsig):
+
+### `tuttle.read : (opts: Object) => Stream`
+
+Returns a transform stream. See documentation for [binary-csv](https://npm.im/binary-csv)
+
+Defaults to json object-mode streams. This is slightly slower, but easier to work with in most cases. You can override this by passing `{json: false}` in the `opts`.
 
 ## installation
 

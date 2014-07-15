@@ -14,12 +14,14 @@
   "license": "ISC",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "chai": "^1.9.1",
-    "mocha": "^1.19.0"
+    "mochi": "^0.1.0",
+    "chai-interface": "^1.1.0",
+    "from": "^0.1.3"
   },
   "dependencies": {
     "csv-write-stream": "^0.2.0",
     "through0": "^0.1.1",
-    "binary-csv": "^0.2.0"
+    "binary-csv": "^0.2.1",
+    "xtend": "^3.0.0"
   }
 }
