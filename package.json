@@ -22,6 +22,7 @@
     "csv-write-stream": "^0.2.0",
     "through0": "^0.1.1",
     "binary-csv": "^0.2.1",
-    "xtend": "^3.0.0"
+    "xtend": "^3.0.0",
+    "csv-parser": "^1.4.1"
   }
 }

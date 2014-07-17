@@ -1,5 +1,5 @@
 var write = require('csv-write-stream')
-var csv = require('binary-csv')
+var csv = require('csv-parser')
 var through = require('through0')
 var extend = require('xtend')
 
